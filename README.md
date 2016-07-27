@@ -1,2 +1,10 @@
-# modulo_horarios
-Módulo para información de horarios por curso (para los alumnos)
+### modulo_horarios
+======
+#### Alumnos
+
+- Puchetti Ian
+- Casavieja Daiana
+- Cabral Jonathan
+- Claros Braian
+- Lopez Romina
+- Cisneros Emanuel
