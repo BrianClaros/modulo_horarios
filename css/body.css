@@ -1,0 +1,43 @@
+/*table.tableizer-table {
+		font-size: 12px;
+		border: 2px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+		width: 100%;
+	} 
+	.tableizer-table td {
+		text-align: center;
+		padding: 4px;
+		margin: 3px;
+		border: 2px solid #CCC;
+	}
+	.tableizer-table th {
+		text-align: center;
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+
+th.opcion {
+	font-size: 18pt;
+	padding-top: 2%;
+	margin-left: 30px;
+}
+*/
+input {
+	border: none;
+	background: #104E8B; 
+	color: #f2f2f2;
+ 	margin: 10px;
+ 	margin-top: 15px;
+ 	padding: 9px;
+ 	font-size: 12px;
+ 	border-radius: 5px;
+ 	position: relative;
+ 	box-sizing: border-box;
+ 	transition: all 500ms ease;
+}
+h1.texto {
+	text-align: center;
+	margin: center;
+}
+
