@@ -66,7 +66,7 @@ function obtener(){
             if(valor == 4){dia="Jueves";}
             if(valor == 5){dia="Viernes";}
     item="<table class='table table-default'>";
-    item+="<thead'><tr><td>Horarios</td><td class='cambio'>"+dia+"</td></tr></thead></tbody>";
+    item+="<thead><tr><td>Horarios</td><td class='cambio'>"+dia+"</td></tr></thead></tbody>";
 
     $.each(horarios, function(i, field){
                 if (horarios[i]["curso"] == curso) {
