@@ -28,13 +28,13 @@ function obtener(){
             if(valor == 3){dia="Miercoles";}
             if(valor == 4){dia="Jueves";}
             if(valor == 5){dia="Viernes";}
-    item="<table class='table table-default'>";
-    item+="<thead><tr><td>Horarios</td><td class='cambio'>"+dia+"</td></tr></thead></tbody>";
+    item="<table class='table table-default' style='text-align:center;'>";
+    item+="<thead><tr><td style='width=50%;'>Horarios</td><td style='width=50%;'>"+dia+"</td></tr></thead></tbody>";
 
     $.each(horarios, function(i, field){
                 if (horarios[i]["curso"] == curso) {
                     if (horarios[i]["dia"]==valor) {
-                      item+="<tr><td>"+horarios[i]["hora_inicial"]+"  a  "+horarios[i]["hora_final"]+"</td><td class='cambio'>"+localStorage.getItem(horarios[i]["materia"])+'</td></tr>';
+                      item+="<tr><td>"+horarios[i]["hora_inicial"]+"  </br>a</br>  "+horarios[i]["hora_final"]+"</td><td class='cambio'></br>"+localStorage.getItem(horarios[i]["materia"])+'</td></tr>';
                     }
                 }
     });
