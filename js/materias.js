@@ -1,67 +1,21 @@
 $(document).ready(function () {
-	
-	$.ajax({
-		type: "GET",
-    	dataType: "json",
-    	url: "http://colegio.paparelli.com.ar/materias",
-    	success: function(data){
+	var pagina=1, nulo=0, val=0;
+while(nulo==0){
+        $.ajax({
+            type: "GET",
+            async:false,
+            dataType: "json",
+            url: "http://colegio.paparelli.com.ar/materias/?page="+pagina,
+            success: function(data){
     		$.each(data.results, function(i, field){
         		localStorage.setItem(field.id,field.nombre);
       		});
-		}
-	});
-
-	$.ajax({
-		type: "GET",
-    	dataType: "json",
-    	url: "http://colegio.paparelli.com.ar/materias/?page=2",
-    	success: function(data){
-    		$.each(data.results, function(i, field){
-        		localStorage.setItem(field.id,field.nombre);
-      		});
-		}
-	});
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "http://colegio.paparelli.com.ar/materias/?page=3",
-        success: function(data){
-            $.each(data.results, function(i, field){
-                localStorage.setItem(field.id,field.nombre);
-            });
-        }
-    });
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "http://colegio.paparelli.com.ar/materias/?page=4",
-        success: function(data){
-            $.each(data.results, function(i, field){
-                localStorage.setItem(field.id,field.nombre);
-            });
-        }
-    });
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "http://colegio.paparelli.com.ar/materias/?page=5",
-        success: function(data){
-            $.each(data.results, function(i, field){
-                localStorage.setItem(field.id,field.nombre);
-            });
-        }
-    });
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "http://colegio.paparelli.com.ar/materias/?page=6",
-        success: function(data){
-            $.each(data.results, function(i, field){
-                localStorage.setItem(field.id,field.nombre);
-            });
-        }
-    });
-	
-
+		
+		
+                if(data.next==null){nulo=1;}else{pagina++;}
+                
+            }
+        });
+}
 
 });
