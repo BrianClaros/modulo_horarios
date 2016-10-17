@@ -1,26 +1,16 @@
- var valor=1;
+var valor=1;
  $( document ).ready(function() {
         obtener();
-         $( "body" ).on( "swipe", function(){
              $("body").on("swipeleft",function(){
-                    if (valor == 5) {
-                        valor=5;
-                    }else{
-                        valor=valor+1; 
-                        obtener();
-                    }  
+                    $("#siguiente").click();
+                    alert( "izq" )
                 });
 
                  $("body").on("swiperight",function(){
-                    if (valor == 1) {
-                        valor=1;
-                    }else{
-                        valor=valor-1;
-                        obtener();  
-                    }
-                        
+					$("#anterior").click();
+					alert( "der" )                        
                 });
-	});
+	
              $("#siguiente").on("click",function(){
                     if (valor == 5) {
                         valor=5;
