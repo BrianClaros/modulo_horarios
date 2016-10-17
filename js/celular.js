@@ -1,8 +1,8 @@
  var valor=1;
  $( document ).ready(function() {
         obtener();
-         
-             $("#horarios").on("swipeleft",function(){
+         $( "body" ).on( "swipe", function(){
+             $("body").on("swipeleft",function(){
                     if (valor == 5) {
                         valor=5;
                     }else{
@@ -11,7 +11,7 @@
                     }  
                 });
 
-                 $("#horarios").on("swiperight",function(){
+                 $("body").on("swiperight",function(){
                     if (valor == 1) {
                         valor=1;
                     }else{
@@ -20,7 +20,7 @@
                     }
                         
                 });
-
+	});
              $("#siguiente").on("click",function(){
                     if (valor == 5) {
                         valor=5;
