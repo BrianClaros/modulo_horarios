@@ -3,12 +3,10 @@ var valor=1;
         obtener();
              $("body").on("swipeleft",function(){
                     $("#siguiente").click();
-                    alert( "izq" )
                 });
 
                  $("body").on("swiperight",function(){
-					$("#anterior").click();
-					alert( "der" )                        
+					$("#anterior").click();                       
                 });
 	
              $("#siguiente").on("click",function(){
